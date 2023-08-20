@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>980</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#widget{
+background-color: qlineargradient(spread:pad, x1:0.562182, y1:0.466, x2:1, y2:1, stop:0.0454545 rgba(210, 108, 43, 255), stop:0.982955 rgba(255, 255, 255, 255));;}
+background-color: rgb(231, 154, 0);
+</string>
+   </property>
+   <widget class="QLabel" name="advsearchLabel">
+    <property name="geometry">
+     <rect>
+      <x>59</x>
+      <y>10</y>
+      <width>851</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>50</pointsize>
+      <weight>10</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 85 50pt &quot;MS Shell Dlg 2&quot;;
+color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="catsearch">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>120</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Category</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="advsearchBtn">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>210</y>
+      <width>631</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="advsearchtable">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>250</y>
+      <width>881</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>true</bool>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>true</bool>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Category</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Model</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Price ($)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Warranty (months)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Color</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Power Supply</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Factory</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Production Year</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Inventory</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="logoutBtn">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>580</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Logout</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="go2cartBtn">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>580</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Check Cart</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add2cartBtn">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>580</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add to Cart</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="facsearch">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>180</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Factory</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pyrsearch">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>180</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Production Year</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pwrsearch">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>150</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Power Supply</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="clrsearch">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>150</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Color</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="modsearch">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>120</y>
+      <width>311</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Model</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="purchasehist">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>580</y>
+      <width>120</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Purchase History</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>catsearch</tabstop>
+  <tabstop>modsearch</tabstop>
+  <tabstop>clrsearch</tabstop>
+  <tabstop>pwrsearch</tabstop>
+  <tabstop>facsearch</tabstop>
+  <tabstop>pyrsearch</tabstop>
+  <tabstop>advsearchBtn</tabstop>
+  <tabstop>advsearchtable</tabstop>
+  <tabstop>add2cartBtn</tabstop>
+  <tabstop>go2cartBtn</tabstop>
+  <tabstop>logoutBtn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>clrsearch</sender>
+   <signal>returnPressed()</signal>
+   <receiver>advsearchBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>catsearch</sender>
+   <signal>returnPressed()</signal>
+   <receiver>advsearchBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>facsearch</sender>
+   <signal>returnPressed()</signal>
+   <receiver>advsearchBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>402</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>402</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>modsearch</sender>
+   <signal>returnPressed()</signal>
+   <receiver>advsearchBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>570</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pwrsearch</sender>
+   <signal>returnPressed()</signal>
+   <receiver>advsearchBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>667</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>661</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pyrsearch</sender>
+   <signal>returnPressed()</signal>
+   <receiver>advsearchBtn</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>745</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>743</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
